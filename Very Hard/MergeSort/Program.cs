@@ -10,6 +10,7 @@ namespace MergeSort
             Console.WriteLine($"Array is : {String.Join(',', array)}\nSorted Array is : {String.Join(',', MergeSort(array))}");
         }
 
+        //Time complextity O(nlogn)  => logn because of the binary tree that it creates, and n for the while loops that traverse the array
         public static int[] MergeSort(int[] array)
         {
             if (array.Length == 0)
